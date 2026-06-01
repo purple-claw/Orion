@@ -1,0 +1,5 @@
+# Sandbox build outputs
+/main
+/main.o
+/main.i
+/main.s
