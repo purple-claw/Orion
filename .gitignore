@@ -24,17 +24,19 @@ CMakeCache.txt
 compile_commands.json
 
 # Workspace-specific generated binaries and intermediates
-Phase1/arth
-Phase1/cond
-Phase1/const
-Phase1/conv
-Phase1/dowhile
-Phase1/for
-Phase1/inp
-Phase1/opers
-Phase1/sizeof
-Phase1/swt
-Phase1/while
+Basics/arth
+Basics/cond
+Basics/const
+Basics/conv
+Basics/dowhile
+Basics/for
+Basics/inp
+Basics/opers
+Basics/sizeof
+Basics/swt
+Basics/while
+Arrays/GradAnal
+Arrays/Init
 test/main
 test/main.i
 test/main.s

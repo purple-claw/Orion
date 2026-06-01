@@ -1,5 +1,4 @@
 # Orion C++ Exercises
-
 This workspace contains a set of small, standalone C++ practice programs. The source is kept simple and topic-focused, while generated binaries and intermediates are excluded from version control.
 
 ## Layout
