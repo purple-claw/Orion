@@ -25,9 +25,12 @@ int main(){
             cntr++;
         }
     }
-    std::cout << "The Number Appears " << cntr << " times in the Array" << '\n';
+    
     if (cntr == 0){
         std::cout << "Not Found" << '\n';
+    }
+    else {
+        std::cout << "The Number Appears " << cntr << " times in the Array" << '\n';
     }
     return 0;
 }
