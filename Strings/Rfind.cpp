@@ -1,14 +1,22 @@
 #include <string>
 #include <iostream>
 
-int main(){
-    std::string st{"one two one three one"};
-    size_t pos{st.rfind("one")};
+void gtStr(std::string nm){
+    size_t st{nm.find("name:"+5)};
+    size_t ed{nm.find(" ", st)};
+    std::string tmp{nm.substr(st, ed - st)};
+    std::cout << "Name is " << tmp << '\n';
+}
 
-    if (pos != std::string::npos){
-        std::cout << "Found at Index : " << pos << '\n';
-    } else {
-        std::cout << "Not Found\n";
-    }
-    return 0;
+int main(){
+    std::string st{"name:Orion age:25"};
+    gtStr(st);
+    // size_t pos{st.rfind("one")};
+
+    // if (pos != std::string::npos){
+    //     std::cout << "Found at Index : " << pos << '\n';
+    // } else {
+    //     std::cout << "Not Found\n";
+    // }
+    // return 0;
 }
