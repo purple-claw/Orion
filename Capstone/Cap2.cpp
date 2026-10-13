@@ -66,8 +66,22 @@ LogEntry split2Level(const std::string &sr)
     return {level, code, val};
 }
 
+std::string levelPrefix(Level level)
+{
+    switch (level)
+    {
+        case Level::Info:
+            return "[INFO]";
+        case Level::Warn:
+            return "[WARNING]";
+        case Level::Error:
+            return "[!! ERROR !!]";
+    }
+    return "?";
+}
+
 int main(){
-    std::array<std::string, nStd>{
+    std::array<std::string, nStd> lines{
         "WARN:104:87.5",
         "ERROR:210:12",
         "INFO:1:100",
@@ -77,7 +91,9 @@ int main(){
     int i{0};
     while (i < nStd)
     {
-        std::cout << i << std::endl;
+        LogEntry entry{split2Level(lines[i])};
+        std::cout << levelPrefix(entry.level) << " code " << entry.code << ", value " << entry.value << '\n';
+        ++i;
     }
-    
+    return 0;
 }
