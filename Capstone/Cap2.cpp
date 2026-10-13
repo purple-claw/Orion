@@ -97,3 +97,16 @@ int main(){
     }
     return 0;
 }
+
+/*
+
+ g++ Cap2.cpp -o Cap2.elf -Wall -Wextra -Werror -std=c++17
+ ./Cap2.elf
+
+[WARNING] code 104, value 87.5
+[!! ERROR !!] code 210, value 12
+[INFO] code 1, value 100
+[!! ERROR !!] code 210, value 78.56
+[WARNING] code 104, value 90.1
+
+*/
